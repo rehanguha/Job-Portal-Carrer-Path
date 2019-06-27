@@ -1,0 +1,56 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+public partial class Admin_frmAddstudent : System.Web.UI.Page
+{
+    QualificationBL qual = new QualificationBL();
+    StudentDetailBL student = new StudentDetailBL();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (Session["UserName"] == null)
+        {
+            Response.Redirect("~/Admin/frmAdminLogin.aspx");
+        }
+        if (!IsPostBack)
+        {
+            ddlQualification.DataSource = qual.ShowQualification();
+            ddlQualification.DataTextField = "Qualification";
+            ddlQualification.DataValueField = "QualificationId";
+            ddlQualification.DataBind();
+            ddlQualification.Items.Insert(0, "---Select---");
+        }
+
+    }
+    protected void btnAdd_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            student.RollNo = txtRollNo.Text.Trim();
+            student.Name = txtName.Text.Trim();
+            student.QualificationId = int.Parse(ddlQualification.SelectedValue);
+            student.PassingYear = ddlPassingYear.SelectedItem.Text;
+            student.InsertStudentDetail();
+            lblMsg.Text = "Inserted...!";
+        }
+        catch (Exception ex)
+        {
+            lblMsg.Text = ex.Message.ToString(); ;
+        }
+    }
+    protected void btnClear_Click(object sender, EventArgs e)
+    {
+        txtName.Text = "";
+        txtRollNo.Text = "";
+        lblMsg.Text = "";
+        txtRollNo.Focus();
+
+    }
+}

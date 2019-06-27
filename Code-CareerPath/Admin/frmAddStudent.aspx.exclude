@@ -1,0 +1,59 @@
+<%@ Page Language="C#" MasterPageFile="~/Admin/AdminMenuMasterPage.master" AutoEventWireup="true" CodeFile="frmAddStudent.aspx.cs" Inherits="Admin_frmAddstudent" Title="Untitled Page" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <br />
+    <br />
+    <table align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" colspan="2" style="font-weight: bold; color: purple">
+                <span style="font-size: 14pt; color: purple;">Add Student Detail</span></td>
+        </tr>
+        <tr style="font-size: 12pt">
+            <td align="left" style="font-size: 12pt; color: purple">
+                <span style="color: purple"><strong>
+                Roll No:</strong></span></td>
+            <td align="left" style="width: 100px">
+                <asp:TextBox ID="txtRollNo" runat="server" Width="150px"></asp:TextBox></td>
+        </tr>
+        <tr style="font-size: 12pt">
+            <td align="left" style="font-size: 12pt; color:purple">
+                <strong>Student Name</strong>:</td>
+            <td align="left" style="width: 100px">
+                <asp:TextBox ID="txtName" runat="server"></asp:TextBox></td>
+        </tr>
+        <tr style="font-size: 12pt">
+            <td align="left" style="font-size: 12pt; color: purple; height: 22px;">
+                <strong>
+                Qualification:</strong></td>
+            <td align="left" style="width: 100px; height: 22px;">
+                <asp:DropDownList ID="ddlQualification" runat="server" Width="132px">
+                </asp:DropDownList></td>
+        </tr>
+        <tr style="font-size: 12pt">
+            <td align="left" style="font-size: 12pt; color: purple">
+                <strong>
+                Passing Year:</strong></td>
+            <td align="left" style="width: 100px">
+                <asp:DropDownList ID="ddlPassingYear" runat="server" Width="132px">
+                    <asp:ListItem>2000</asp:ListItem>
+                    <asp:ListItem>2001</asp:ListItem>
+                    <asp:ListItem>2002</asp:ListItem>
+                    <asp:ListItem>2003</asp:ListItem>
+                    <asp:ListItem>2004</asp:ListItem>
+                    <asp:ListItem>2005</asp:ListItem>
+                    <asp:ListItem>2006</asp:ListItem>
+                    <asp:ListItem>2007</asp:ListItem>
+                    <asp:ListItem>2008</asp:ListItem>
+                </asp:DropDownList></td>
+        </tr>
+        <tr style="font-size: 12pt">
+            <td align="center" colspan="2" style="font-size: 12pt; color: #ffffff">
+                <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Add" Width="56px" />
+                <asp:Button ID="btnClear" runat="server" OnClick="btnClear_Click" Text="Clear" Width="51px" /></td>
+        </tr>
+        <tr style="font-size: 12pt">
+            <td align="center" colspan="2" style="font-size: 12pt; color: #ffffff">
+                <asp:Label ID="lblMsg" runat="server" Font-Bold="True" Font-Size="13pt" Width="316px" ForeColor="Purple"></asp:Label></td>
+        </tr>
+    </table>
+</asp:Content>
+

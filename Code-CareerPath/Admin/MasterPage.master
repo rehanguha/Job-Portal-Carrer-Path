@@ -1,0 +1,48 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Admin_MasterPage" %>
+<%@ Register Src="../UserControl/AdminFooterUserControl.ascx" TagName="AdminFooterUserControl"
+    TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Career Path</title>
+</head>
+<body style="background-color:#E3C7DA; margin-top:0; margin-left:0; margin-right:0">
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%" align="center" >
+         <tr>
+                <td  style="height: 19px;" valign="bottom"  align="center" width="35%">
+                    <strong><span style="font-size: 32pt; color: #663366"><span style="color: Purple">Career&nbsp; Path</span>
+                       </span></strong></td>
+                       <td align="right" valign="bottom"  >
+                        <asp:Label ID="Label1" runat="server" style="position: relative" Font-Bold="True" Font-Size="XX-Large" ForeColor="Purple" Text="Administration"  />
+                       </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="purple" colspan="3" style="font-weight: bold; color: #e3c7da">
+                    <span style="font-size: 14pt">
+                  Admin Login</span></td>
+            </tr>
+         <tr>
+             <td align="left" colspan="1" valign="top">
+             <asp:Image ID="Image1" ImageUrl="~/JobSeeker/Images/image01.jpg" runat="server" Height="229px"  />
+             </td>
+                <td colspan="2" align="center" >
+                <div style="height:550px">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+        </div> 
+                                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <uc1:AdminFooterUserControl ID="AdminFooterUserControl1" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

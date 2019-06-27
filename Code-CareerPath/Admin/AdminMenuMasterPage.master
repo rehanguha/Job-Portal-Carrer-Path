@@ -1,0 +1,60 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMenuMasterPage.master.cs" Inherits="AdminMenuMasterPage" %>
+<%@ Register Src="../UserControl/AdminFooterUserControl.ascx" TagName="AdminFooterUserControl"
+    TagPrefix="uc3" %>
+<%@ Register Src="UserControl/HeaderMenuUserControl.ascx" TagName="HeaderMenuUserControl"
+    TagPrefix="uc2" %>
+<%@ Register Src="UserControl/LoginLogoutWebUserControl.ascx" TagName="LoginLogoutWebUserControl"
+    TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Career Path</title>
+</head>
+<body style="background-color:#E3C7DA; margin-top:0; margin-left:0; margin-right:0">
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+            <tr>
+                <td  style="height: 19px; width: 798px;" valign="bottom"  align="center">
+                    <strong><span style="font-size: 32pt; color: #663366"><span style="color: Purple">Career&nbsp; Path</span>
+                       </span></strong></td>
+                       <td align="right" valign="bottom"  >
+                        <asp:Label ID="Label1" runat="server" style="position: relative" Font-Bold="True" Font-Size="XX-Large" ForeColor="Purple" Text="Administration" Width="217px" />
+                       </td>
+            </tr>
+            <tr>
+                <td align="right" valign="bottom" colspan="2" style="height: 19px">
+                    <uc1:LoginLogoutWebUserControl ID="LoginLogoutWebUserControl1" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2" style="height: 19px">
+                    <uc2:HeaderMenuUserControl ID="HeaderMenuUserControl1" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2" style="height: 19px">
+                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                        <tr>
+                            <td align="left" style="width: 186px; vertical-align:top; height: 428px;">
+                                <asp:Image ID="Image1" runat="server" Height="246px" ImageUrl="~/Images/login_big_dec9.gif" Width="203px" /></td>
+                            <td style="width: 655px; height: 428px;">
+                            <div style="height:410px">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                            </div> 
+                            </td>
+                            <td align="right" style="vertical-align:top; height: 428px;">
+                                <asp:Image ID="Image2" runat="server" Height="190px" ImageUrl="~/Images/rpanel_dec9.gif" Width="132px" /></td>
+                        </tr>
+                    </table>
+                    <uc3:AdminFooterUserControl ID="AdminFooterUserControl1" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
