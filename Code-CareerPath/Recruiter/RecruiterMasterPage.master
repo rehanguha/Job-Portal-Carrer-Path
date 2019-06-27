@@ -1,0 +1,59 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="RecruiterMasterPage.master.cs" Inherits="Recruiter_RecruiterMasterPage" %>
+<%@ Register Src="UserControl/HeaderMenuUserControl.ascx" TagName="HeaderMenuUserControl"
+    TagPrefix="uc3" %>
+<%@ Register Src="../UserControl/RecruiterFooterserControl.ascx" TagName="RecruiterFooterserControl"
+    TagPrefix="uc2" %>
+<%@ Register Src="UserControl/LoginLogoutWebUserControl.ascx" TagName="LoginLogoutWebUserControl"
+    TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body style="background-color: #A1BAE3; margin-top:0; margin-left:0; margin-right:0" >
+    <form id="form1" runat="server">
+    <div style="text-align:center ">
+       <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+           <tr>
+               <td align="right" colspan="2">
+                   <uc1:LoginLogoutWebUserControl ID="LoginLogoutWebUserControl1" runat="server" />
+               </td>
+           </tr>
+            <tr >
+                <td colspan="2" align="center">
+                    <img src="../Images/RegruiterHeader.bmp" id="IMG1" runat="server" style="width:100%;height:108px" /></td>
+                   
+            </tr>
+           <tr>
+               <td align="right" colspan="2">
+                   <uc3:HeaderMenuUserControl ID="HeaderMenuUserControl1" runat="server" />
+               </td>
+           </tr>
+           <tr>
+               <td align="right" colspan="2">
+                  </td>
+           </tr>
+        </table>
+        <div style="text-align: center">
+            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                <tr>
+                    <td valign="top" style="width: 760px; height:410px">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                    </td>
+                    <td align="right" valign="top">
+                        <asp:Image ID="Image2" runat="server" ImageUrl="~/JobSeeker/Images/trial_cca.jpg" Height="241px" Width="216px" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <uc2:RecruiterFooterserControl ID="RecruiterFooterserControl1" runat="server" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
