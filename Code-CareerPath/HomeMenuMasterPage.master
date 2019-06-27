@@ -1,0 +1,54 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HomeMenuMasterPage.master.cs" Inherits="HomeMenuMasterPage" %>
+<%@ Register Src="UserControl/HeaderMenuUserControl.ascx" TagName="HeaderMenuUserControl"
+    TagPrefix="uc3" %>
+<%@ Register Src="UserControl/FooterUserControl.ascx" TagName="FooterUserControl"
+    TagPrefix="uc2" %>
+<%@ Register Src="UserControl/RightUserControl.ascx" TagName="RightUserControl" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Career Path</title>
+</head>
+<body style="margin-top:0; margin-left:0; margin-right:0" >
+    <form id="form1" runat="server">
+    <div style="text-align:center ">
+       <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+            <tr >
+                <td colspan="2" align="center">
+                    <asp:image ID="img1" runat="server" ImageUrl="~/Images/MainHeader copy.jpg" style="width:101%;height:108px" /></td>
+            </tr>
+           <tr>
+               <td colspan="2">
+                   &nbsp;&nbsp;
+                   <uc3:HeaderMenuUserControl ID="HeaderMenuUserControl1" runat="server" />
+               </td>
+           </tr>
+        </table>
+    </div>
+        <table width="100%">
+            <tr>
+                <td style="width: 778px" align="center" ><div style="height:410px">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder></div>
+        <asp:LinkButton ID="lnkNewUser" runat="server" Text="New Jobseekers Click Here To Register.." PostBackUrl="~/JobSeeker/Registration/frmJobSeekerRegistration.aspx" Font-Bold="True" ></asp:LinkButton>
+                </td>
+                <td valign="top" align="right">
+                    <uc1:RightUserControl ID="RightUserControl1" runat="server" />
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    &nbsp; &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <uc2:FooterUserControl ID="FooterUserControl1" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
