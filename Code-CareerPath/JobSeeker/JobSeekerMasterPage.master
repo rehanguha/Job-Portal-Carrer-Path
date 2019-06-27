@@ -1,0 +1,66 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="JobSeekerMasterPage.master.cs" Inherits="JobSeeker_JobSeekerMasterPage" %>
+<%@ Register Src="../UserControl/JobseekerFooterUserControl.ascx" TagName="JobseekerFooterUserControl"
+    TagPrefix="uc3" %>
+<%@ Register Src="../UserControl/RightUserControl.ascx" TagName="RightUserControl"
+    TagPrefix="uc4" %>
+<%@ Register Src="UserControl/HeaderMenuUserControl.ascx" TagName="HeaderMenuUserControl"
+    TagPrefix="uc5" %>
+<%@ Register Src="../UserControl/FooterUserControl.ascx" TagName="FooterUserControl"
+    TagPrefix="uc2" %>
+<%@ Register Src="UserControl/LoginLogoutWebUserControl.ascx" TagName="LoginLogoutWebUserControl"
+    TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body style="background-color:#E3E7E3 ;margin-top:0; margin-left:0; margin-right:0" alink="#ffffff" >
+    <form id="form1" runat="server">
+    <div style="text-align:center ">
+       <table border="0" cellpadding="0" cellspacing="0" style="width: 100%" align="center" >
+            <tr >
+                <td colspan="2" align="center">
+                    <img src="../Images/JobSeeker.bmp"  style="width:100%;height:108px" id="IMG1" runat="server"/></td>
+                   
+            </tr>
+           <tr>
+               <td align="right" colspan="2">
+                   <uc1:LoginLogoutWebUserControl ID="LoginLogoutWebUserControl1" runat="server" />
+               </td>
+           </tr>
+           <tr>
+               <td align="left" colspan="2">
+                   <uc5:HeaderMenuUserControl ID="HeaderMenuUserControl1" runat="server" />
+               </td>
+           </tr>
+           <tr>
+               <td align="right" colspan="2">
+                   <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Green"
+                       NavigateUrl="~/JobSeeker/frmJobSeekerHome.aspx">Back<<</asp:HyperLink></td>
+           </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%" align="center" >
+            <tr>
+                <td align="center" valign="top" style="width:753px">
+                <div style=" height:410px; width: 753px;">
+                  <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+        </div> 
+               
+                </td>
+                <td valign="middle" align="right">
+                <asp:Image ID="Img2" runat="server" ImageUrl="~/JobSeeker/Images/academic_img.jpg" BorderColor="Green" BorderStyle="Solid" />
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    &nbsp;<uc3:JobseekerFooterUserControl ID="JobseekerFooterUserControl1" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
