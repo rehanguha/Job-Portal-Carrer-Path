@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="CityBL">
+    <Position X="7.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\CityBL.cs</FileName>
+      <HashCode>AAAAAIgBQQAgAAIAIAAAIAQAAAAAAAgEAgACACAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Connection">
+    <Position X="15.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\Connection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CountryBusinessLayer">
+    <Position X="11.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\CountryBusinessLayer.cs</FileName>
+      <HashCode>AAAACIAQAAAgAAAgAEAAIAQACAAQABAEgAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExperianceBL">
+    <Position X="16.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\ExperianceBL.cs</FileName>
+      <HashCode>ADACAAAAAAACAFAAAAAABAAAAAAAAAAAEAACQCAAgAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FunctionalAreaBL">
+    <Position X="24.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\FunctionalAreaBL.cs</FileName>
+      <HashCode>AAEAAAAABACgAAAAAAAACAAAAAAAUAAEAAACAABRAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JobSeekerRegistrationBL">
+    <Position X="2.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\JobSeekerRegistrationBL.cs</FileName>
+      <HashCode>tUS+QeBQKHFDQk1+wS8KSnyayDoKgAJDHMgTPjwZQEg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JobSeekerResponseToJobBL">
+    <Position X="5.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\JobSeekerResponseToJobBL.cs</FileName>
+      <HashCode>BAAAAAAgQAAAEAAQAIYCQCAIAAEACAAAAQAGAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JobTypeBL">
+    <Position X="13" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\JobTypeBL.cs</FileName>
+      <HashCode>CAAQAAAAQAAgAYAAAAAAYAAAAAAAAAAEAAACAAgAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualificationBL">
+    <Position X="20.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\QualificationBL.cs</FileName>
+      <HashCode>AABEAAAAAAAgIGAAAAIAAAAAFAAAAAAEAAASgABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecruiterJobOpeningAndOtherDetail">
+    <Position X="26" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\RecruiterJobOpeningAndOtherDetail.cs</FileName>
+      <HashCode>AElgAiwASEgEFUkSGAIgAHAEAUAAgwJAAYQCAACAFUQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecruiterRegistrationBL">
+    <Position X="4" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\RecruiterRegistrationBL.cs</FileName>
+      <HashCode>FBgARUBAFQgJwEAESAIIBEAIgAsAAAUDhQRCJuATABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecruiterResponseToJobSeekeBL">
+    <Position X="9.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\RecruiterResponseToJobSeekeBL.cs</FileName>
+      <HashCode>AAAgQAAQQAAAEAAQAIICQCAAAAAAAAAAAQACAAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SkillMasterBL">
+    <Position X="14.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\SkillMasterBL.cs</FileName>
+      <HashCode>AAAAAAAAAABgEAEAAAAAAAACIAAAAQAEAQACAAAAFAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StateBL">
+    <Position X="22.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\StateBL.cs</FileName>
+      <HashCode>AAAAAgAAQSAgAAAAAAAAIBQAAAAQAEAEAAECBAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentDetailBL">
+    <Position X="27.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathBL\StudentDetailBL.cs</FileName>
+      <HashCode>BAAEAAAAAAAAIAAAAAACIAQgAAAAAABAAQACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CareerPath.DAL.SqlHelper">
+    <Position X="29.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathDAL\SQLHelper.cs</FileName>
+      <HashCode>AACAAACAAAAAACAEABAAAEAAgAAAAAABAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="CareerPath.DAL.SqlHelper.SqlConnectionOwnership">
+        <TypeIdentifier>
+          <NewMemberFileName>App_Code\CareerPathDAL\SQLHelper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="CareerPath.DAL.SqlHelperParameterCache">
+    <Position X="31.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\CareerPathDAL\SQLHelper.cs</FileName>
+      <HashCode>AEAAAAAAAECAAIAAAAAAAARAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

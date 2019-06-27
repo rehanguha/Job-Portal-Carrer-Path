@@ -1,0 +1,79 @@
+H1  {
+	font-size : 16pt;
+	font-family : arial;
+	font-weight : bold;
+	font-style : normal;
+	color : White;
+}
+
+
+H2  {
+	font-size : 14pt;
+	font-family : arial;
+	font-weight : bold;
+	font-style : normal;
+	color : White;
+}
+
+
+H3  {
+	font-size : 12pt;
+	font-family : arial;
+	font-weight : bold;
+	font-style : italic;
+	color : White;
+}
+
+
+H6  {
+	font-size : 10pt;
+	font-family : Arial;
+	font-weight : bold;
+	font-style : normal;
+	color : White;
+}
+
+
+BODY  {
+	color : White;
+	font-size : 10pt;
+	font-family : Arial, Verdana, sans-serif;
+	font-weight : normal;
+	font-style : normal;
+}
+
+
+P  {
+	font-size : 10pt;
+	font-family : Arial, Verdana, sans-serif;
+	font-weight : normal;
+	font-style : normal;
+	color : White;
+}
+
+
+A:link  {
+	font-size : 10pt;
+	font-family : Arial, Verdana, sans-serif;
+	font-weight : normal;
+	font-style : normal;
+	color :  #3D99F5;
+}
+
+
+A:hover  {
+	font-size : 10pt;
+	font-family : Arial, Verdana, sans-serif;
+	font-weight : normal;
+	font-style : normal;
+	color :  #3D99F5;
+}
+
+
+A:visited  {
+	font-size : 10pt;
+	font-family : Arial, Verdana, sans-serif;
+	font-weight : normal;
+	font-style : normal;
+	color : Gray;
+}
